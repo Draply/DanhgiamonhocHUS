@@ -10,8 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor
 from subprocess import CREATE_NO_WINDOW
 import requests
-MSV = '20001906'
-Email = 'doanhduc_t65@hus.edu.vn'
+MSV = '20'
+Email = 'doanhduc.vn'
 def login_via(subList,stt):
     try:
         if stt<=8:
