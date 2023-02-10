@@ -1,0 +1,6 @@
+ Lập trình nâng cao|MAT33761|Lê Trọng Vĩnh
+ Công nghệ phần mềm|MAT35431|Bùi Sỹ Nguyên
+ Nguyên lý hệ điều hành|MAT35011|Hoàng Quốc Hùng
+ Nguyên lý các ngôn ngữ lập trình|MAT35412|Nguyễn Thị Tâm
+  Tối ưu hóa|MAT24071 |Nguyễn Ngọc Phan
+  Điện - Quang|PHY110312 |Bùi Hồng Vân
