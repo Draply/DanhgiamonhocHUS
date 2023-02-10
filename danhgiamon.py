@@ -116,19 +116,20 @@ def login_via(subList,stt):
 
     except Exception as e:
         print(e)
-list_via = []
-with open('thongtin.txt', 'r') as f:
-    reader = csv.reader(f, delimiter= '|', lineterminator ='\n')
-    for i in reader:
-        list_via.append(i)
-Newlist_via = [ele for ele in list_via if ele != []]
-soluong = 10
-List_stt = []
-for stt in range(len(Newlist_via)):
-    List_stt.append(stt)
-with ThreadPoolExecutor(max_workers=soluong) as executor:
-    executor.map(login_via, Newlist_via,List_stt)
-    executor.shutdown(wait=True)
+if __name__ == '__main__':
+    list_via = []
+    with open('thongtin.txt', 'r') as f:
+        reader = csv.reader(f, delimiter= '|', lineterminator ='\n')
+        for i in reader:
+            list_via.append(i)
+    Newlist_via = [ele for ele in list_via if ele != []]
+    soluong = 10
+    List_stt = []
+    for stt in range(len(Newlist_via)):
+        List_stt.append(stt)
+    with ThreadPoolExecutor(max_workers=soluong) as executor:
+        executor.map(login_via, Newlist_via,List_stt)
+        executor.shutdown(wait=True)
 
 
 
